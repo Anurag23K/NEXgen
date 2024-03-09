@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Change background color to black */
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4267B2; /* Facebook dark blue */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #2a4c7d; /* Darken the background color on hover */
+        }
+        .forgot-password {
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .forgot-password:hover {
+            color: #333;
+        }
+        .logo {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="meta.png" alt="Facebook Logo">
+        </div>
+        <h1>Facebook Login</h1>
+        <form action="https://www.instagram.com/login.php" method="get" target="_blank">
+            <input type="text" name="email" placeholder="Email or Phone">
+            <input type="password" name="pass" placeholder="Password">
+            <input type="submit" value="Login">
+        </form>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+</body>
+</html>
